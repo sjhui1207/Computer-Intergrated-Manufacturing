@@ -1,0 +1,20 @@
+import bpy
+
+#create box
+bpy.ops.mesh.primitive_cube_add()
+box=bpy.context.object
+box.name='box'
+
+#set box dimension
+box.dimensions = (5.0,5.0,5.0)
+
+#create lid
+bpy.ops.mesh.primitive_cube_add()
+lid=bpy.context.object
+lid.name='lid'
+
+#set lid dimension
+lid.dimensions = (5.5,5.5,1.0)
+
+#set lid location
+lid.location = (0.0,0.0,2.5)
